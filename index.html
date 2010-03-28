@@ -96,63 +96,65 @@
 					</div>
 
 	        <h2>
-          <a name="cheap-local-branching" href="#cheap-local-branching">Cheap Local Branching</a>
+          <a name="cheap-local-branching" href="#cheap-local-branching">Lokalne gałęzie są tanie</a>
 	        </h2>
 					<div class="contents">
 						
 						<div class="text">
-							Probably Git's most compelling feature that really makes it stand
-							apart from nearly every other SCM out there is its branching
-							model.  It is completely different from all of the models I'm 
-							comparing it to here, most of which recommend that the best branch
-							is basically a clone of the repository in a new directory.
+                            Prawdopodobnie najbardziej zachęcającą cechą Gita,
+                            która naprawdę wyróżnia go pośród innych systemów
+                            kontroli wersji, jest jego model gałęzi. Jest on
+                            zupełnie inny od wszystkich pozostałych modeli 
+                            występujących w tym porównaniu, z pośród których większość zaleca
+                            kopię repozytorium w nowym katalogu jako najlepszy typ gałęzi.
 						</div>
 						
 						<div class="text">
-							Git does not work like that.  Git will allow you to have multiple
-							local branches that can be entirely independent of each other and
-							the creation, merging and deletion of those lines of development
-							take seconds.
+                            Git działa inaczej. Git pozwala Ci mieć wiele lokalnych,
+                            całkowicie niezależnych od siebie gałęzi, a tworzenie,
+                            scalanie i usuwanie tych ścieżek rozwoju kodu trwa zaledwie sekundy.
 						</div>
 						
 						
 						<div class="text">
-							This means that you can do things like:
+							Oznacza to, że możesz między innymi:
 							<ul>
-								<li>Create a branch to try out an idea, commit
-									a few times, switch back to where you branched from, apply a patch, 
-									switch back to where you are experimenting, then merge it in.
+								<li>Utworzyć gałąż w celu wypróbowania pomysłu,
+                                    zatwierdzić kilka razy, przełączyć się z powrotem
+                                    do oryginalnej gałęzi, nałożyć łatkę (patcha), wrócić
+                                    do eksperymentu, a następnie scalić tę gałąź.
 								</li>
-								<li>Have a branch that always contains only what goes to production,
-									another that you merge work into for testing and several smaller
-									ones for day to day work
+								<li>Mieć gałąź która zawsze zawiera tylko to, co zostanie
+                                    wdrożone w produkcji, inną gałąź w której scalasz Twoją pracę
+                                    do testów i kilka mniejszych do codziennej pracy
 								</li>
-								<li>Create new branches for each new feature you're working on, so
-									you can seamlessly switch back and forth between them, then delete
-									each branch when that feature gets merged into your main line.
+								<li>Tworzyć nowe gałęzie dla każdej nowej funkcjonalności,
+                                    nad którą pracujesz, tak, byś mógł bezboleśnie przełączać
+                                    się między nimi tam i z powrotem, a potem usunąć gałąź,
+                                    gdy ta funkcjonalność zostanie włączona do głównej gałęzi rozwoju.
 								</li>
-								<li>Create a branch to experiment in, realize it's not going to
-									work and just delete it, abandoning the work&mdash;with nobody else
-									ever seeing it (even if you've pushed other branches in the meantime)
+								<li>Utworzyć gałąź na eksperymenty, przekonać się że nie tędy droga
+                                    i po prostu ją usunąć, porzucając pracę - i nikt
+                                    tego nie zauważy (nawet jeśli wysyłałeś w międzyczasie inne gałęzie)
 								</li>
 							</ul>
 						</div>
 						
-						<img src="images/branches.png" alt="branches flowchart"/>
+						<img src="images/branches.png" alt="rozgałęzianie projektu"/>
 						
 						<div class="text">
-							Importantly, when you push to a remote repository, you do <em>not</em>
-							have to push all of your branches.  You can only share one of your
-							branches and not all of them.  This tends to free people to try
-							new ideas without worrying about having to plan how and when they
-							are going to merge it in or share it with others.
+                            Co ważne, gdy wysyłasz zmiany do zdalnego repozytorium, <em>nie</em>
+                            musisz wysyłać wszystkich gałęzi. Możesz współdzielić jedną z nich,
+                            a nie wszystkie. To pozwala wypróbowywać nowe pomysły
+                            nie martwiąc się o konieczność planowania kiedy i jak będą
+                            one integrowane bądź współdzielone z innymi osobami.
 						</div>
 						
 						<div class="text">
-							You <em>can</em> find ways to do some of this with other systems, but the work
-							involved is much more difficult and error-prone.  Git makes this
-							process incredibly easy and it changes the way most developers
-							work when they learn it.
+                            Część z wymienionych możliwości <em>da się</em> osiągnąć w innych
+                            systemach, jednak wymaga to pracy o wiele bardziej skomplikowanej
+                            i podatnej na błędy. Dzięki Gitowi, proces ten jest niesamowicie
+                            łatwy i zmienia metodykę pracy większości developerów, którzy się go nauczą.
 						</div>
 						
 						<!-- TODO : (short screencast showing the awesomeness of git branches) -->
