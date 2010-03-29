@@ -454,39 +454,45 @@
 					</div>
 		
 	        <h2>
-          <a name="the-staging-area" href="#the-staging-area">The Staging Area</a>
+          <a name="the-staging-area" href="#the-staging-area">Poczekalnia</a>
 	        </h2>
 					<div class="contents">
 						<div class="text">
-							Unlike the other systems, Git has what it calls the "staging area"
-							or "index".  This is an intermediate area that you can setup what
-							you want your commit to look like before you commit it.
+                            W odróżnieniu od innych systemów Git ma coś, co jest nazywane
+                            "poczekalnią" (ang. <em>staging area</em>) lub indeksem.
+                            Jest to obszar pośredniczący, w którym możesz dostosować
+                            Twoje zmiany zanim je zatwierdzisz.
 						</div>
 						<div class="text">
-							The cool thing about the staging area, and what sets Git apart 
-							from all these other tools, is that you can easily stage some of
-							your files as you finish them and then commit them without committing
-							all the modified files in your working directory, or having to list
-							them on the command line during the commit
+                            Co jest fajne jeśli chodzi o poczekalnię, i co wyróżnia
+                            Gita spośród innych narzędzi, to to, że możesz łatwo
+                            dodać do poczekalni część Twoich plików gdy tylko
+                            skończysz nad nimi pracę, a następnie zatwierdzić je
+                            bez zatwierdzania wszystkich zmodyfikowanych plików
+                            w Twoim katalogu roboczym. Nie musisz również podawać
+                            listy zatwierdzanych plików w wierszu poleceń podczas
+                            wykonywania commita.
 						</div>
-						<div class="center"><img src="images/index1.png" alt="add commit workflow diagram" /></div>
+						<div class="center"><img src="images/index1.png" alt="dodawanie do poczekalni i zatwierdzanie" /></div>
 						
 						<div class="text">
-						  This also allows you to stage only portions of a modified file.  Gone are
-						  the days of making two logically unrelated modifications to a file before
-						  you realized that you forgot to commit one of them.  Now you can just stage
-						  the change you need for the current commit and stage the other change for
-						  the next commit.  This feature scales up to as many different changes to
-						  your file as you need.
+                          W dodatku poczekalnia pozwala Ci na przygotowanie do zatwierdzenia
+                          jedynie fragmentów zmodyfikowanego pliku. Minęły już czasy, gdy
+                          zrobiłeś dwie logicznie niezależne zmiany w pliku zanim się
+                          zorientowałeś, że zapomniałeś zatwierdzić jedną z nich. Teraz
+                          możesz po prostu dodać do poczekalni tylko tą zmianę, którą
+                          potrzebujesz do bieżącego commita, a tę drugą zatwierdzisz później.
+                          Możesz tak robić dla dowolnej liczby różnych zmian w pliku.
 						</div>
 
 						<div class="text">
-							Of course, Git also makes it pretty easy to ignore this feature
-							if you don't want that kind of control&mdash;just slap a '-a' to your
-							commit command in order to add all changes to all files to the staging area.
+                            Oczywiście, Git pozwala na pominięcie tej funkcjonalności,
+                            jeśli nie zależy Ci na takim stopniu kontroli. Dodaj tylko
+                            '-a' do polecenia commit, by przenieść do poczekalni wszystkie zmiany
+                            w wszystkich plikach.
 						</div>
 						
-						<div class="center"><img src="images/index2.png" alt="commit only workflow diagram" /></div>
+						<div class="center"><img src="images/index2.png" alt="bezpośrednie zatwierdzanie" /></div>
 					</div>
 	    </div>
 
