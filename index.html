@@ -563,60 +563,65 @@
 				</div>
 		
        	<h2>
-        <a name="any-workflow" href="#any-workflow">Any Workflow</a>
+        <a name="any-workflow" href="#any-workflow">Dowolny model pracy</a>
        	</h2>
 
 				<div class="contents">
 					
 					<div class="text">
-						One of the amazing things about Git is that because of its distributed
-						nature and super branching system, you can easily implement pretty
-						much any workflow you can think of relatively easily.
+                        Fantastyczną cechą Gita jest to, że ze względu na jego
+                        rozproszoną naturę i świetny mechanizm rozgałęzień,
+                        możesz łatwo wdrożyć dowolny model pracy, jaki Ci z łatwością 
+                        przyjdzie do głowy.
 					</div>
 					
-					<h3>Subversion-Style Workflow</h3>
+					<h3>Praca w stylu SVN</h3>
 					
 
 					<div class="text">
-						A very common Git workflow, especially from people transitioning
-						from a centralized system, is a centralized workflow.  Git will 
-						not allow you to push if someone has pushed since the last time
-						you fetched, so a centralized model where all developers push to
-						the same server works just fine.
+                        Bardzo popularnym trybem pracy z Gitem, szczególnie wśród
+                        ludzi przenoszących się z systemów scentralizowanych, jest
+                        tryb scentralizowany. Git nie pozwala Ci wysłać zmian, jeśli
+                        ktoś wysłał swoje poprawki po tym, jak pobrałeś dane z serwera,
+                        wiec model scentralizowany gdzie wszyscy programiści wysyłają
+                        do wspólnego serwera sprawdza się całkiem dobrze.
 					</div>
 					
-					<div class="center"><img src="images/workflow-a.png" alt="subversion-style workflow" /></div><br/>
+					<div class="center"><img src="images/workflow-a.png" alt="praca w stylu SVN" /></div><br/>
 					
-					<h3>Integration Manager Workflow</h3>
+					<h3>Menedżer integracji</h3>
 
 					<div class="text">
-						Another common Git workflow is where there is an integration 
-						manager&mdash;a single person who commits to the 'blessed' repository,
-						and then a number of developers who clone from that repository, 
-						push to their own independent repositories and ask the integrator
-						to pull in their changes.  This is the type of development model 
-						you often see with open source or GitHub repositories.
+                        Inny typowy model pracy z Gitem charakteryzuje się istnieniem
+                        menedżera integracji - jednej osoby, która wysyła zmiany do
+                        "błogosławionego" repozytorium. Następnie programiści
+                        pobierają dane z tego repozytorium, pracują nad kodem i wysyłają
+                        zmiany do ich własnych repozytoriów, a potem proszą osobę
+                        zarządzającą, by włączyła ich zmiany do głównego repozytorium.
+                        Często spotkasz się z takim trybem pracy w projektach open
+                        source lub repozytoriach GitHub.
 					</div>
 
-					<div class="center"><img src="images/workflow-b.png" alt="integration manager workflow" /></div><br/>
+					<div class="center"><img src="images/workflow-b.png" alt="menedżer integracji" /></div><br/>
 
-					<h3>Dictator and Lieutenants Workflow</h3>
+					<h3>Dyktator i porucznicy</h3>
 
 					<div class="text">
-						For more massive projects, you can setup your developers similar to
-						the way the Linux kernel is run, where people are in charge of a
-						specific subsystem of the project ('lieutenants') and merge in all
-						changes that have to do with that subsystem.  Then another integrator
-						(the 'dictator') can pull changes from only his/her lieutenants and
-						push those to the 'blessed' repository that everyone then clones from
-						again.
+                        W bardziej złożonych projektach możesz zorganizować pracę programistów
+                        w podobny sposób, jak pracują twórcy jądra Linuksa. Ludzie 
+                        odpowiedzialni za poszczególne podsystemy projektu ("porucznicy")
+                        scalają wszystkie zmiany, które mają coś wspólnego z tym podsystemem.
+                        W dalszej kolejności osoba zarządzająca całym projektem
+                        ("dyktator") pobiera zmiany od poruczników, a potem wysyła je
+                        do "błogosławionego" repozytorium, z którego każdy może je pobrać.
 					</div>
 
-					<div class="center"><img src="images/workflow-c.png" alt="dictator and lieutenants workflow" /></div><br/>
+					<div class="center"><img src="images/workflow-c.png" alt="dyktator i porucznicy" /></div><br/>
 					
 					<div class="text">
-						Again, Git is entirely flexible about this, so you can mix and 
-						match and choose the workflow that is right for you. 
+                        Git jest bardzo elastyczny w tej dziedzinie, więc możesz
+                        kombinować na różne sposoby i wybrać taki tryb pracy, 
+                        który najbardziej Ci odpowiada.
           </div>
 					
 				</div>
